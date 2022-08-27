@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#sliderimg {
+    width: 100%;
+    height: 100%;
+    animation: zoom 3s linear infinite;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1.3);
+    }
+
+    15% {
+        transform: scale(1);
+    }
+
+    85% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.3);
+    }
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    position: absolute;
+}
+
+.content {
+    width: 60%;
+    margin: 40vh auto 0;
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 {
+    margin-bottom: 10vh;
+
+    font-size: 4rem;
+}
+
+button {
+
+    width: 15vw;
+    padding: 15px 0;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #fe7250;
+    background: #fe7250;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background: transparent;
+    border: 2px solid #fff;
+}
+
+.mainbody {
+    background: url(../images/background.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+
+}
+
+.space {
+    height: 10vh;
+}
+
+.formbody {
+    padding: 3vh;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 60%;
+    height: 80vh;
+}
+
+.inputgrp {
+    font-size: 2rem;
+    padding: 1vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.inputgrp label{
+    padding: 2vh;
+}
+.inputbutton button{
+    margin: 4vh;
+    font-size: 1.2rem;
+    color: black;
+    padding: 1.5vh;
+}
+
+select {
+
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 25%;
+    font-family: inherit;
+    font-size: 2rem;
+    cursor: inherit;
+    line-height: inherit;
+    outline: none;
+    padding-left: 1.1rem;
+}
+
+select::-ms-expand {
+    display: none;
+}
+input[type=text] {
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 25%;
+    font-family: inherit;
+    font-size: 2rem;
+    cursor: inherit;
+    line-height: inherit;
+    outline: none;
+    padding-left: 1.1rem;
+}
+.result h2{
+font-size: 2rem;
+}
